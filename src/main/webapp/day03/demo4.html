@@ -1,0 +1,20 @@
+<script language="JavaScript" type="text/javascript"> 
+ function createTable(){ 
+
+     var div = document.getElementById("dd"); 
+     var table = document.createElement("table");//创建table 
+     var row = table.insertRow();//创建一行 
+     var cell = row.insertCell();//创建一个单元 
+     cell.width = "150";//更改cell的各种属性 
+     cell.style.backgroundColor = "#999999"; 
+     cell.innerHTML="你好吗？"; 
+     cell = row.insertCell();//创建一个单元 
+     cell.width = "150";//更改cell的各种属性 
+     cell.style.backgroundColor = "#999999"; 
+     cell.innerHTML="非常好！"; 
+     div.appendChild(table); 
+ } 
+</script> 
+<body onload="createTable();"> 
+<div id="dd">www</div> 
+</body>

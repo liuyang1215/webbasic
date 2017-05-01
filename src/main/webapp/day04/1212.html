@@ -1,0 +1,112 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title></title>
+<script type="text/javascript" src="../js/jquery-1.11.1.js"></script>
+<script type="text/javascript">
+	function add() {
+		var id = $("#id").val();
+		var name = $("#name").val();
+		var email = $("#email").val();
+		var phone = $("#phone").val();
+		var new_tr = $('<tr>'
+					+'<td>'+'<input type="checkbox">'+'</td>'
+					+'<td>'+id+'</td>'
+					+'<td>'+name+'</td>'
+					+'<td>'+email+'</td>'
+					+'<td>'+phone+'</td>'
+					+'<td>'+'<input type="button" value="修改" onclick="updone(this)"/>'+'</td>'
+					+'<td>'+'<input type="button" value="删除" onclick="del(this)"/>'+'</td>'
+					+'</tr>');
+		$("#t").append(new_tr);
+	}
+
+	function del(obj) {
+		$(obj).parent().parent().remove();
+	}
+
+	function delMore() {
+		$(":checked:not(#tt)").parent().parent().remove();
+
+	}
+
+	function updone(obj) {
+		var all = $(obj).parent().siblings();
+		var id = $(all).eq("1").text();
+		var name = $(all).eq("2").text();
+		var email = $(all).eq("3").text();
+		var phone = $(all).eq("4").text();
+		
+		$("#id_new").val(id);
+		$("#name_new").val(name);
+		$("#email_new").val(email);
+		$("#phone_new").val(phone);
+	}
+
+	function upd() {
+		var id = $("#id_new").val();
+		console.log(id);
+		var name =$("#name_new").val();
+		console.log(name);
+		var email = $("#email_new").val();
+		var phone = $("#phone_new").val();
+
+		console.log('#t tr:eq(1) td:nth-child(3)').text(name);
+
+	}
+
+
+</script>
+</head>
+<body>
+	<br/><br/>
+	<div align="center">
+		<br/><br/>
+		添加用户：
+		<br/><br/>
+		ID:<input type="text" id="id">&nbsp;&nbsp;
+
+		姓名：<input type="text" name="name" id="name">&nbsp;&nbsp;
+
+		email：<input type="text" name="email" id="email">&nbsp;&nbsp;
+
+		电话：<input type="text" name="phone" id="phone">&nbsp;&nbsp;
+
+		<br/><br/>
+		<input type="button" value="提交" onclick="add();"/>
+	</div>
+		<br/><br/>
+
+	<div align="center">
+		<table id="t" border="1" cellpadding="5" cellspacing="0">
+			<tr id="">
+				<th id="tt"><input type="checkbox"></th>
+				<th>ID</th>
+				<th>姓名</th>
+				<th>email</th>
+				<th>电话</th>
+				<th>修改</th>
+				<th>删除</th>
+			</tr>
+		</table>
+		<input type="button" value="删除选中数据" onclick="delMore();"/>
+	</div>
+	<br/><br/><br/><br/>
+
+	<div align="center">
+		<br/><br/>
+		修改用户：
+		<br/><br/>
+		ID:<input type="text" id="id_new" readonly="readonly">&nbsp;&nbsp;
+
+		姓名：<input type="text" name="name" id="name_new">&nbsp;&nbsp;
+
+		email：<input type="text" name="email" id="email_new">&nbsp;&nbsp;
+
+		电话：<input type="text" name="phone" id="phone_new">&nbsp;&nbsp;
+
+		<br/><br/>
+		<input type="button" value="提交" onclick="upd();">
+	</div>
+</body>
+</html>

@@ -1,0 +1,239 @@
+body{
+	margin:0;
+	font-family: "微软雅黑","文泉驿正黑","黑体";
+}
+
+.line1{
+	width:100%;
+	background-color: #FAFAFA;
+}
+.line1 .content{
+	width:1200px;
+	height:35px;
+	border-bottom:1px solid #EDEDED;
+	line-height:35px;
+	margin:0 auto;
+}
+.head a{
+	text-decoration: none;
+	font-size:14px;
+	color:#666666;
+	margin-left:6px;
+	margin-right: 3px;
+}
+
+/*  LOGO、搜索、查看订单与购物车、二维码 */
+.line2{
+	width:1200px;
+	height:100px;
+	margin:0px auto;
+	line-height:100px;
+}
+.head .line2 .logo,.line2 input,.goto{
+	/*按水平线居中*/
+	vertical-align: middle;
+}
+.qr{
+	margin-top: 10px;
+	float:right;
+}
+.line2 input[type='text']{
+	width:370px;
+	height:30px;
+	margin-left: 120px;
+	border:2px solid #CA141D;
+}
+.line2 input[type='button']{
+	width:70px;
+	height:36px;
+	background-color: #CA141D;
+	border: 1px solid #CA141D;
+	color:white;
+	cursor: pointer;
+}
+.goto{
+	margin-left: 5px;
+	border: 1px solid #E5E5E5;
+	padding-top:6px;
+	padding-bottom:6px;
+}
+
+/* 导航栏  */
+.line3{
+	width: 100%;;
+	height:38px;
+	background-color:#CA141D;
+	margin-bottom: 2px;
+}
+
+.nav1{
+	width: 1200px;
+	margin:0 auto;
+}
+
+.nav1 ul{
+	padding: 0;
+	margin: 0;
+}
+.nav1 li{
+	list-style: none;
+	width: 120px;
+	float: left;
+}
+
+.nav1 ul li {
+	position: relative;
+	z-index:60;
+} 
+
+.nav1 .sub {
+	position: absolute;
+	display: none;
+	
+}
+
+.nav1 ul li:hover .sub {
+	display: block;
+} 
+
+.line3 .nav1 .sub {
+	width: 100px;
+
+}
+
+.nav1 ul .sub li a {
+	font-size: 14px;
+	border:1px solid gray;
+}
+
+.nav1 .caret{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.nav1 li a{
+	line-height: 38px;
+	color:white;
+	text-decoration: none;
+	text-align: center;
+	
+}
+.nav1 li a:hover{
+	cursor:pointer;
+	background-color: #D9141E;
+}
+
+
+
+.nav1 ul .sub li {
+   background-color: red;
+   width: 60px;
+   margin-right: 20px;
+
+}
+
+.nav1 ul .sub li a{
+  	display: block;	
+  	color: #666;
+}
+
+
+
+.second {
+	width: 1200px;
+	height: 400px;
+	margin: 0 auto;
+	padding-top: 2px;
+	overflow: hidden;
+	position: relative;
+}
+
+.second ul {
+	list-style-type: none;
+	position: absolute;
+}
+.second ol {
+	position: absolute;
+	right: 5px;
+	bottom: 10px;
+}
+
+.second ul li {
+	position: absolute;
+}
+
+.second ol li {
+	height: 20px;
+	width: 20px;
+	background-color: #ccc;
+	border: 1px solid #666;
+	margin-left: 5px;
+	color: #000;
+	float: left;
+	line-height: 20px;
+	text-align: center;
+	cursor: pointer;
+	z-index: 1;
+}
+.second ol .ad_num{
+	background: #e97305;
+	color: #fff;
+}
+
+/*内容区*/
+.index{
+	width:1200px;
+	margin: 0 auto;
+}
+
+.brand{
+	margin-bottom: 10px;
+}
+
+.brand_right{
+	float:right;
+}
+
+.sale_top img:last-of-type{
+	float:right;
+	margin-right: 0;
+}
+
+.sale_bottom_right{
+	width:278px;
+	float:right;
+}
+
+.sale_bottom_right img:last-of-type{
+	margin-top: 14px;
+}
+
+/* 底部导航栏 */
+.security{
+	margin-top:30px;
+	margin-bottom:20px;
+	float:left;
+	width:300px;
+}
+
+.security img{
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+ .security span{
+	vertical-align: middle;
+}
+
+/* 底部 */
+.foot{
+	clear:both;
+	width:1200px;
+	margin:15px auto;
+	border-top: 1px solid #EEEEEE;
+	text-align: center;
+	font-size: 13px;
+	color:#666666;
+}
+
+

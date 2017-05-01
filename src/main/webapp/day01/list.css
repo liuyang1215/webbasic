@@ -1,0 +1,141 @@
+div {
+	border: 1px solid red;
+	margin: 0 auto;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.logo {
+	width: 960px;
+	height: 61px;
+}
+
+.menu {
+	height: 91px;
+}
+
+.core {
+	height: 410px;
+	padding-top: 10px;
+}
+
+.cr {
+	width: 960px;
+	height: 50px;
+}
+
+.content {
+	width: 950px;
+	height: 390px;
+	border: 5px solid #8ac1db;
+}
+
+.content div {
+	width: 910px;
+	height: 40px;
+}
+
+.content .data {
+ 	height: 310px;
+}
+
+body {
+	background-color: #0EA8D8;
+	font-family: "微软雅黑","文泉驿正黑","黑体";
+	font-size: 14px;
+}
+.logo {
+ 	background-image:url(../img/top_bg.png);
+ 	text-align: right;
+ 	line-height: 61px;
+}
+.menu {
+	background-color: #0488bb;
+}
+.core {
+	background: url(../img/content_bg.png) repeat-x top;
+}
+.content {
+	background-color: #e8f3f8;
+}
+
+.logo a {
+	margin-right: 40px;
+	color: #fff;
+	text-decoration: none;
+}
+.logo a:hover {
+	font-weight: bold;
+}
+.cr p {
+	text-align: center;
+	color: #fff;
+	line-height: 25px;
+}
+.data table{
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+	width: 100%;
+}
+.data td {
+	border: 1px solid #ccc;
+}
+.data thead tr {
+	height: 40px;
+	background-color: #fbedce;
+	font-weight: bold;
+}
+.data tbody tr {
+	height: 32px;
+	background-color: #fff;
+}
+.data td {
+	text-align: center;
+}
+.data tbody tr:hover {
+	background-color: #f7f9fd;
+}
+.update {
+	padding-left: 15px;
+	background: url(../img/modification.png) no-repeat left;
+}
+.update:hover{
+	cursor: pointer;
+}
+.delete:hover{
+	cursor:pointer;
+}
+.delete{
+	padding-left: 15px;
+	background: url(../img/delete.png) no-repeat left;
+}
+.logo img{
+	float: left;
+}
+.content {
+	position: relative;
+}
+.content .message {
+	width: 500px;
+	height: 80px;
+	border: 1px solid #f68a8a;
+	position: absolute;
+	top: 100px;
+	left: 225px;
+}
+
+.message img {
+	float: right;
+	margin: 5px;
+	cursor: pointer;
+}
+.message p {
+	margin-left: 38px;
+	line-height: 80px;
+}
+.message {
+	background: #fdecec url(../img/ok.png) no-repeat 10px 32.5px;
+}
